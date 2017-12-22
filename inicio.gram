@@ -1,0 +1,10 @@
+#JSGF V1.0;
+
+grammar inicio;
+
+public <NoStandardCommands> = [Prototype] <OtherCommands>;
+public <PlaySongs> = [Prototype] play (<NULL>);
+public <OpenOrder> = [Prototype] open (Facebook | Google | Youtube | Music Player);
+public <CloseOrder> = [Prototype] close (Facebook | Google | Youtube | Music Player);
+public <controlCommands> = [Prototype] (End Of Line | Stop Listening | Listen To Me | Stop Talking | Talk To Me);
+public <OtherCommands> = (Take A Picture | Scan Face | Add A Command | Show Me Your Commands | Close Commands | Change Default Music Player | Change Default Browser | Who Am I);
