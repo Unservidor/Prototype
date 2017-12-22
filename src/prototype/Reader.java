@@ -40,7 +40,7 @@ public class Reader {
         NameSelector nameSelector = new NameSelector();
         scanning = false;
         PerceptronMulticapa perceptron = new PerceptronMulticapa(22500, 1);
-        Action.trainNet(perceptron, dataBase.getTrainigData(), 10);
+        Action.trainNet(perceptron, dataBase.getTrainigData(), 100);
         try {
             NeuralNet.saveWeights(perceptron, nameSelector.getNewName(), 100);
         } catch (FileNotFoundException ex) {}
